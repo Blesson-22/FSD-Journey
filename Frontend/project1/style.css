@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+
+    grid-template-columns: 2.2fr 2fr 1fr 2.7fr 2.2fr;
+    grid-template-rows: 2.9fr 2.6fr 0.7fr 1.8fr 2fr;
+
+   grid-template-areas:
+   "top-left top-center1 top-center1 top-center2 top-right"
+    "top-left center center center top-right"
+    "bottom-left center center center top-right"
+    "bottom-left center center center top-right "
+    "bottom-left bottom-left1 bottom-left2 bottom-left2 bottom-right"
+   ;
+   gap: 7px;
+   
+}
+.top-left{
+    background-color: aquamarine; 
+    grid-area: top-left;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.bottom-left{
+    background-color: rgb(7, 93, 57);
+    grid-area: bottom-left;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.top-center1{
+    background-color: yellow;
+    grid-area: top-center1;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.top-center2{
+    background-color: rgb(39, 46, 58);
+    grid-area: top-center2;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.center{
+    background-color: brown;
+    grid-area: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.bottom-left1{
+    background-color: tomato;
+    grid-area: bottom-left1;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.bottom-left2{
+    background-color: rgb(108, 58, 49);
+    grid-area:bottom-left2;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.top-right{
+    background-color: teal;
+    grid-area:top-right;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.bottom-right{
+    background-color: rgb(78, 105, 105);
+    grid-area:bottom-right;
+    border: 2px solid white;
+    border-radius: 10px;
+}
